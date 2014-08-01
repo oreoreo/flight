@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\GameManager2.cs" />
      <Compile Include="Assets\Scripts\Map.cs" />
      <Compile Include="Assets\Scripts\Map2.cs" />
+     <Compile Include="Assets\Scripts\WrongBird.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

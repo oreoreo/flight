@@ -31,4 +31,16 @@ public class GameManager2 : MonoBehaviour {
 			PlayerPrefs.SetInt("Highscore", highscore);
 		}
 	}
+
+	void OnGUI()
+	{
+		// Set the GUI's skin to our custom skin
+		GUI.skin = skin;
+		// Show our current score value at the top center of the screen 
+		// (note: it uses the custom Score style in our skin)
+		GUI.Label (new Rect (Screen.width / 2 - 100, 10f, 200, 200), 
+           curScore.ToString (), skin.GetStyle ("Score"));
+		
+
+		}
 }

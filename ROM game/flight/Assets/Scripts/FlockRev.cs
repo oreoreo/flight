@@ -24,6 +24,13 @@ public class FlockRev : MonoBehaviour {
 
 	
 	void Start () {
+		gameManager = (GameManager2) GameObject.FindObjectOfType(typeof(GameManager2));
+		if (gameManager) {
+			Debug.Log ("GUITexture object found: " + gameManager.name);
+		}
+		else
+			Debug.Log("No gameManager object could be found");
+
 		//determines depth of bird within environment
 		int layerNum = Random.Range (0, 4);
 		gameObject.renderer.sortingOrder = layerNum;
@@ -46,6 +53,7 @@ public class FlockRev : MonoBehaviour {
 		if (hit.collider != null) {
 			Debug.Log ("Target Position: " + hit.collider.gameObject.transform.position);
 			audio.PlayOneShot(wings);
+			gameManager.curScore ++;
 			Destroy (hit.collider.gameObject);
 		}
 		else {
