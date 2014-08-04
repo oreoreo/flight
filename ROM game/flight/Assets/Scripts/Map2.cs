@@ -18,6 +18,8 @@ public class Map2 : MonoBehaviour {
 
 	public GameObject owlObject;
 
+	public GameObject gsObject;
+
 	//reverse versions
 	public GameObject pgnRObject; //most common
 	
@@ -26,6 +28,8 @@ public class Map2 : MonoBehaviour {
 	public GameObject carRObject;
 	
 	public GameObject owlRObject;
+
+	public GameObject gsRObject;
 
 	private float nextActionTime = 0.0f;
 	public float period;
@@ -93,46 +97,54 @@ public class Map2 : MonoBehaviour {
 
 
 	void GenerateColumn (Vector2 vector){
-		float randomNumber = Random.Range (0.0f, 10.0f);
-		//Debug.Log ("new column" + randomNumber + vector);
+		float randomNumber = Random.Range (0.0f, 12.0f);
 		if (randomNumber < 0.5f) {
 			GameObject InsObject = (GameObject)Instantiate (pgnObject, vector, Quaternion.identity);
 			InsObject.transform.parent = this.transform;
 		} 
-		else if (randomNumber < 0.7f) {
+		else if (randomNumber < 0.6f) {
 			GameObject InsObject = (GameObject)Instantiate (owlObject, vector, Quaternion.identity);
 			InsObject.transform.parent = this.transform;
 		}
-		else if (randomNumber < 0.9f) {
+		else if (randomNumber < 0.7f) {
 			GameObject InsObject = (GameObject)Instantiate (psgObject, vector, Quaternion.identity);
 			InsObject.transform.parent = this.transform;
 		}
-
-		else if (randomNumber < 1.1f) {
+		
+		else if (randomNumber < 0.8f) {
 			GameObject InsObject = (GameObject)Instantiate (carObject, vector, Quaternion.identity);
+			InsObject.transform.parent = this.transform;
+		}
+		
+		else if (randomNumber < 1.3f) {
+			GameObject InsObject = (GameObject)Instantiate (gsObject, vector, Quaternion.identity);
 			InsObject.transform.parent = this.transform;
 		}
 		
 	}
 
 	void GenerateColumnRev (Vector2 vector){
-		float randomNumber = Random.Range (0.0f, 10.0f);
-		//Debug.Log ("new columnRev" + randomNumber + vector);
+		float randomNumber = Random.Range (0.0f, 12.0f);
 		if (randomNumber < 0.5f) {
 			GameObject InsObject = (GameObject)Instantiate (pgnRObject, vector, Quaternion.identity);
 			InsObject.transform.parent = this.transform;
 		} 
-		else if (randomNumber < 0.7f) {
+		else if (randomNumber < 0.6f) {
 			GameObject InsObject = (GameObject)Instantiate (owlRObject, vector, Quaternion.identity);
 			InsObject.transform.parent = this.transform;
 		}
-		else if (randomNumber < 0.9f) {
+		else if (randomNumber < 0.7f) {
 			GameObject InsObject = (GameObject)Instantiate (psgRObject, vector, Quaternion.identity);
 			InsObject.transform.parent = this.transform;
 		}
 		
-		else if (randomNumber < 1.1f) {
+		else if (randomNumber < 0.8f) {
 			GameObject InsObject = (GameObject)Instantiate (carRObject, vector, Quaternion.identity);
+			InsObject.transform.parent = this.transform;
+		}
+
+		else if (randomNumber < 1.3f) {
+			GameObject InsObject = (GameObject)Instantiate (gsRObject, vector, Quaternion.identity);
 			InsObject.transform.parent = this.transform;
 		}
 		
