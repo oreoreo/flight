@@ -54,8 +54,12 @@ public class WrongBird: MonoBehaviour {
 		if (hit.collider != null) {
 			Debug.Log ("Target Position: " + hit.collider.gameObject.transform.position);
 			audio.PlayOneShot(wings);
-			gameManager.curScore--;
+			gameManager.hearts--;
 			Destroy (hit.collider.gameObject);
+
+			if (gameManager.hearts == 0){
+				gameManager.showGameOver = true;
+			}
 		}
 		else {
 			transform.Translate (transform.right * moveSpeed * Time.deltaTime);

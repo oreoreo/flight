@@ -51,7 +51,10 @@ public class GameManager : MonoBehaviour {
 			// Draw our highscore within the game over window (if the highscore was beaten, it will show your current score)
 			GUI.Label(new Rect(currentGameOver.x + 15f, currentGameOver.y + 70f, currentGameOver.width * .5f, currentGameOver.height * .25f), "High score: " + highscore.ToString());
 			// Draw a replay button on screen and check to see if it was clicked
-			if (GUI.Button (new Rect(currentGameOver.x + (currentGameOver.width - 150), currentGameOver.y + (currentGameOver.height - 80), 130, 60), "", skin.GetStyle("Play")))
+			if (GUI.Button (new Rect(currentGameOver.x + 
+			                         (currentGameOver.width - 150), currentGameOver.y + 
+			                         (currentGameOver.height - 80), 130, 60), "", 
+			                skin.GetStyle("Play")))
 			{
 				// If it is clicked, reload the level
 				Application.LoadLevel("Level");
