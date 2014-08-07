@@ -24,7 +24,7 @@ public class gameOver : MonoBehaviour {
 		            skin.GetStyle ("gameOver"));
 		if (GUI.Button (new Rect (Screen.width/2 - 100, Screen.height/2 - 15, 300, 300), "Play Again?", 
 			               skin.GetStyle ("gameOver"))) {
-			Application.LoadLevel ("starter");
+			Application.LoadLevel (0);
 			
 		}
 

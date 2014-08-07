@@ -26,16 +26,10 @@ public class WrongBird: MonoBehaviour {
 	
 	void Start () {
 		gameManager = (GameManager2) GameObject.FindObjectOfType(typeof(GameManager2));
-		if (gameManager) {
-			Debug.Log ("GUITexture object found: " + gameManager.name);
-		}
-		else
-			Debug.Log("No gameManager object could be found");
-		
+
 		//determines depth of bird within environment
 		int layerNum = Random.Range (0, 4);
 		gameObject.renderer.sortingOrder = layerNum;
-		Debug.Log ("new bird" + gameObject.transform.position + gameObject.name);
 		float deduct = (float)(0.015 * layerNum);
 		gameObject.transform.localScale += new Vector3 (deduct, deduct, 0);
 	}
@@ -44,7 +38,6 @@ public class WrongBird: MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (transform.position.x > 8) {
-			Debug.Log ("dead bird" + gameObject.transform.position);
 			Destroy (gameObject);
 		}
 		
@@ -52,9 +45,10 @@ public class WrongBird: MonoBehaviour {
 		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 		
 		if (hit.collider != null) {
-			Debug.Log ("Target Position: " + hit.collider.gameObject.transform.position);
+			//Debug.Log ("Target Position: " + hit.collider.gameObject.transform.position);
 			audio.PlayOneShot(wings);
 			gameManager.hearts--;
+			Debug.Log ("wrong" + gameObject.name);
 			Destroy (hit.collider.gameObject);
 
 			if (gameManager.hearts == 0){

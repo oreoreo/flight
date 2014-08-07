@@ -21,9 +21,9 @@ public class starter : MonoBehaviour {
 		// Show our current score value at the top center of the screen 
 		// (note: it uses the custom Score style in our skin)
 	
-		if (GUI.Button (new Rect (200, (Screen.height * 2)/3, 200, 200), "Play", 
+		if (GUI.Button (new Rect (Screen.width/2 + 350, Screen.height / 10, 200, 200), "Play", 
 		                skin.GetStyle ("Play"))) {
-			Application.LoadLevel ("tester");
+			Application.LoadLevel (1);
 			
 		}
 	}
