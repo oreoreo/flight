@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(AudioSource))]
 public class Flock2 : MonoBehaviour {
 	public Map2 map;
 
@@ -46,7 +45,7 @@ public class Flock2 : MonoBehaviour {
 		if (hit.collider != null) {
 						//Debug.Log ("Target Position: " + hit.collider.gameObject.transform.position);
 						audio.PlayOneShot(wings);
-						gameManager.curScore ++;
+						gameManager.point();
 						Debug.Log (gameObject.name);
 						Destroy (hit.collider.gameObject);
 				}

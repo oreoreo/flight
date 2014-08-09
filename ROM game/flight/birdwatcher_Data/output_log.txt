@@ -1,0 +1,60 @@
+Initialize engine version: 4.5.2f1 (9abb1b59b47c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     64 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Catherine\Documents\GitHub\flight\ROM game\flight\birdwatcher_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Catherine\Documents\GitHub\flight\ROM game\flight\birdwatcher_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Catherine\Documents\GitHub\flight\ROM game\flight\birdwatcher_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Catherine\Documents\GitHub\flight\ROM game\flight\birdwatcher_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.203 seconds
+desktop: 1920x1080 40Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.301638 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 120.
+Total: 0.668423 ms (FindLiveObjects: 0.013832 ms CreateObjectMapping: 0.008924 ms MarkObjects: 0.108429 ms  DeleteObjects: 0.008478 ms)
+
+UnloadTime: 2.458175 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 118.
+Total: 0.508680 ms (FindLiveObjects: 0.004462 ms CreateObjectMapping: 0.006246 ms MarkObjects: 0.082102 ms  DeleteObjects: 0.007139 ms)
+
+UnloadTime: 0.195886 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 120.
+Total: 0.526528 ms (FindLiveObjects: 0.004462 ms CreateObjectMapping: 0.006246 ms MarkObjects: 0.088349 ms  DeleteObjects: 0.007585 ms)
+
+UnloadTime: 0.210165 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 118.
+Total: 0.533221 ms (FindLiveObjects: 0.004462 ms CreateObjectMapping: 0.006246 ms MarkObjects: 0.093258 ms  DeleteObjects: 0.007585 ms)
+
+UnloadTime: 0.201687 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 220.
+Total: 0.585874 ms (FindLiveObjects: 0.008031 ms CreateObjectMapping: 0.007585 ms MarkObjects: 0.120923 ms  DeleteObjects: 0.008478 ms)
+
+Passenger(Clone)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+wrongpigeon(Clone)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.275758 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 120.
+Total: 9.767109 ms (FindLiveObjects: 0.006246 ms CreateObjectMapping: 0.007139 ms MarkObjects: 0.090580 ms  DeleteObjects: 9.184357 ms)
+

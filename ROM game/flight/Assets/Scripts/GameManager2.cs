@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameManager2 : MonoBehaviour {
 	// The score that the player currently has
-	public int curScore = 0; 
+	public static int curScore = 0; 
 
 	public int hearts = 5;
 
@@ -21,6 +21,7 @@ public class GameManager2 : MonoBehaviour {
 	void Start () {
 		// Grab the last saved highscore from the player prefs file
 		//highscore = PlayerPrefs.GetInt("Highscore");
+		curScore = 0;
 	
 	}
 	
@@ -29,6 +30,10 @@ public class GameManager2 : MonoBehaviour {
 		// If the bird died and our current score is greater than our saved highscore
 
 	}
+
+	public void point(){
+				curScore++;
+		}
 
 	void OnGUI()
 	{

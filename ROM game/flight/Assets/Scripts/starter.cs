@@ -20,11 +20,18 @@ public class starter : MonoBehaviour {
 		GUI.skin = skin;
 		// Show our current score value at the top center of the screen 
 		// (note: it uses the custom Score style in our skin)
-	
-		if (GUI.Button (new Rect (Screen.width/2 + 350, Screen.height / 10, 200, 200), "Play", 
-		                skin.GetStyle ("Play"))) {
+		GUI.Label (new Rect (Screen.width / 2 + 150, Screen.height / 20 - 30, 50, 200), "Birdwatcher", 
+		          skin.GetStyle ("Play"));
+		if (GUI.Button (new Rect (Screen.width/2 + 150, Screen.height/2, 100, 200), "Play", 
+		                skin.GetStyle ("instructions"))) {
 			Application.LoadLevel (1);
 			
 		}
+
+		if (GUI.Button (new Rect (Screen.width/2 + 150, Screen.height /2 - 75 , 100, 300), "Instructions", 
+		    skin.GetStyle ("instructions"))) {
+			Application.LoadLevel (3);
+		}
+
 	}
 }
