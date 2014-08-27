@@ -88,7 +88,7 @@ public class Map2 : MonoBehaviour {
 	//column 3: at y = -3
 	void GenerateColumn3 (){
 		int randomNumber = Random.Range (0, 2);
-		//forward
+
 		if (randomNumber == 0) {
 			GenerateColumn(new Vector2(-10, -3));
 		} 
@@ -104,25 +104,22 @@ public class Map2 : MonoBehaviour {
 		float randomNumber = Random.Range (0.0f, 10.0f);
 		if (randomNumber < 0.5f) {
 			GameObject InsObject = (GameObject)Instantiate (pgnObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
+
 		} 
 		else if (randomNumber < 0.6f) {
 			GameObject InsObject = (GameObject)Instantiate (owlObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
+
 		}
 		else if (randomNumber < 0.7f) {
 			GameObject InsObject = (GameObject)Instantiate (psgObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
 		}
 		
 		else if (randomNumber < 0.8f) {
 			GameObject InsObject = (GameObject)Instantiate (carObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
 		}
 		
 		else if (randomNumber < 1.3f) {
 			GameObject InsObject = (GameObject)Instantiate (gsObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
 		}
 		
 	}
@@ -131,25 +128,25 @@ public class Map2 : MonoBehaviour {
 		float randomNumber = Random.Range (0.0f, 10.0f);
 		if (randomNumber < 0.5f) {
 			GameObject InsObject = (GameObject)Instantiate (pgnRObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
+
 		} 
 		else if (randomNumber < 0.55f) {
 			GameObject InsObject = (GameObject)Instantiate (owlRObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
+
 		}
 		else if (randomNumber < 0.6f) {
 			GameObject InsObject = (GameObject)Instantiate (psgRObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
+
 		}
 		
 		else if (randomNumber < 0.65f) {
 			GameObject InsObject = (GameObject)Instantiate (carRObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
+
 		}
 
 		else if (randomNumber < 1.15f) {
 			GameObject InsObject = (GameObject)Instantiate (gsRObject, vector, Quaternion.identity);
-			//InsObject.transform.parent = this.transform;
+
 		}
 		
 	}

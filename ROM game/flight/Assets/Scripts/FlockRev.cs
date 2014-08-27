@@ -43,7 +43,7 @@ public class FlockRev : MonoBehaviour {
 		
 		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 		
-		if (hit.collider != null) {
+		if ((hit.collider != null) & Input.GetMouseButtonUp(0)) {
 			//Debug.Log ("Target Position: " + hit.collider.gameObject.transform.position);
 			audio.PlayOneShot(wings);
 			gameManager.point();

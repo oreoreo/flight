@@ -46,12 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Bird.cs" />
      <Compile Include="Assets\Scripts\Flock2.cs" />
      <Compile Include="Assets\Scripts\FlockRev.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameManager2.cs" />
-     <Compile Include="Assets\Scripts\Map.cs" />
      <Compile Include="Assets\Scripts\Map2.cs" />
      <Compile Include="Assets\Scripts\WrongBird.cs" />
      <Compile Include="Assets\Scripts\WrongBirdRev.cs" />
