@@ -8,8 +8,6 @@ public class Flock2 : MonoBehaviour {
 
 	public GUISkin skin;
 
-	public bool isDead;
-
 	public int moveSpeed;
 
 	public int curScore;
@@ -28,8 +26,17 @@ public class Flock2 : MonoBehaviour {
 		//determines depth of bird within environment
 		int layerNum = Random.Range (0, 4);
 		gameObject.renderer.sortingOrder = layerNum;
+
+		//adjust size according to depth
 		float deduct = (float)(0.015 * layerNum);
 		gameObject.transform.localScale += new Vector3 (deduct, deduct, 0);
+		
+		//adjust shading 
+		float shade = (float)(1 - 0.1 * (4 - layerNum));
+		gameObject.renderer.material.color = new Vector4(shade, shade, shade, 1);
+
+		//adjust speed
+		moveSpeed = Random.Range (2, 5);
 		}
 
 	

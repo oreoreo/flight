@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameManager2 : MonoBehaviour {
 	// The score that the player currently has
-	public static int curScore = 0; 
+	public static int curScore; 
 
 	public int hearts = 5;
 
@@ -12,8 +12,7 @@ public class GameManager2 : MonoBehaviour {
 	//private int highscore;
 	// Reference to our custom gui skin
 	public GUISkin skin;
-	// Values defining the width and height of our game over screen
-	public Vector2 losePromptWH;
+
 	// Boolean to check if we need to end the game or not
 	[HideInInspector]
 	public bool showGameOver = false;

@@ -18,7 +18,7 @@ public class Map2 : MonoBehaviour {
 
 	public GameObject owlObject;
 
-	public GameObject gsObject;
+	public GameObject gsObject; //common
 
 	//reverse versions
 	public GameObject pgnRObject; //most common
@@ -29,7 +29,7 @@ public class Map2 : MonoBehaviour {
 	
 	public GameObject owlRObject;
 
-	public GameObject gsRObject;
+	public GameObject gsRObject; //common
 
 	private float nextActionTime = 0.0f;
 	public float period;

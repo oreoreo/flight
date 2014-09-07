@@ -1,8 +1,6 @@
 fileFormatVersion: 2
 guid: d26b71f2fa3527344a585a15d9453d5c
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Carolina
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,12 +21,12 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 512
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

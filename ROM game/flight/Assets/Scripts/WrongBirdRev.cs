@@ -34,6 +34,13 @@ public class WrongBirdRev: MonoBehaviour {
 		gameObject.transform.Rotate(new Vector3(0, 180f, 0));
 		float deduct = (float)(0.015 * layerNum);
 		gameObject.transform.localScale += new Vector3 (deduct, deduct, 0);
+		
+		//adjust shading 
+		float shade = (float)(1 - 0.1 * (4 - layerNum));
+		gameObject.renderer.material.color = new Vector4(shade, shade, shade, 1);
+
+		//adjust speed
+		moveSpeed = Random.Range (2, 5);
 	}
 	
 	

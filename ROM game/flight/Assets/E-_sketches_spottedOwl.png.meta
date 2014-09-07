@@ -1,8 +1,6 @@
 fileFormatVersion: 2
 guid: 3f2a58ae386fc48f79c01469f1d28ec9
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: E-_sketches_spottedOwl
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,7 +21,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 512
   textureSettings:
     filterMode: -1
     aniso: 1
